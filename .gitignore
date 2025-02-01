@@ -1,0 +1,9 @@
+# Ignore .ghw files
+*.ghw
+
+# Ignore .cf files
+*.cf
+
+# Ignore .log files
+*.log
+
