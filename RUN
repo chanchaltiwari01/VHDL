@@ -1,0 +1,19 @@
+##to install vhdl compiler & simulator for Linux ubuntu  
+sudo apt update | sudo apt upgrade -y
+sudo apt install ghdl gtkwave
+
+##run compile 
+ghdl -a filename.vhdl
+
+##Elaborate the Design
+ghdl -e module name (entity name ) 
+
+##Run the Simulation
+ghdl -r module name (entity name ) 
+ghdl -r testbench --wave=output.ghw
+
+##Check syntax (without compiling)
+ghdl -s filename.vhdl
+
+##Open Waveform in GTKWave
+gtkwave output.ghw
